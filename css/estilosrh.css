@@ -157,7 +157,7 @@ section {
 }
 
 .home-bg {
-    background: linear-gradient(90deg, var(--white), transparent 70%), url(/imagesrh/laptop.jpg) no-repeat;
+    background: linear-gradient(90deg, var(--white), transparent 80%), url(/imagesrh/laptop.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -196,6 +196,7 @@ section {
     font-size: 2rem;
     color: var(--black);
     line-height: 2;
+    font-weight: 800;
 }
 
 .home-bg .home .content p span {
@@ -689,12 +690,17 @@ img {
         justify-content: center;
     }
 
+    .home-bg .home .content p span {
+        border-bottom: 2px solid var(--main-color);
+        margin: 0;
+    }
+
     .home-bg .home .content h3 {
         font-size: 4rem;
     }
 
     .about .content h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
 }
