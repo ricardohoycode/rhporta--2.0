@@ -267,12 +267,51 @@ section {
     color: var(--light-color);
     font-size: 1.5rem;
     text-transform: none;
-    font-weight: 700;
+    font-weight: 800;
     text-align: justify;
 }
+.content .btn-download{
+    top: 45%;
+    left: 80%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    font-family: 'Merienda One', cursive;
+}
+.content .btn-download{
+    margin-top: 15px;
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.btn-download:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    transition: all .35s;     
+}
 
-.about .content a {
-    border-radius: 7px;
+.content .btn-download span{
+    position: relative;
+    z-index: 2;
+}
+.content .btn-download:hover{
+    color: var(--white);
+}
+.content .btn-download:hover:after{
+    width: 100%;
 }
 
 .facility .box-container {
