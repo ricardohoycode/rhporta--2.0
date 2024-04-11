@@ -555,8 +555,7 @@ section {
     height: 20em;
     border-radius: 50%;
     border: 5px solid var(--main-color);
-    padding: 3px;
-    margin-bottom: 2em;
+    margin-bottom: .5em;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -591,6 +590,10 @@ section {
     text-align: center;
     font-size: 1.5rem;
     margin: 1em 0;
+  }
+  .pais__img{
+   width: 35px;
+   margin-left: 5px;
   }
   
   .linkedin-swiper{
