@@ -105,14 +105,13 @@ section {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 1rem 2rem;
+    padding: .1rem 2rem;
 }
 
 .header .flex .logo img {
     animation: none;
-    height: 7rem;
-    margin: 0 1rem;
-    padding: 0;
+    height: 12rem;
+    margin: 0 .5rem;
 }
 
 .header .flex .navbar a::before,
@@ -139,7 +138,7 @@ section {
 .header .flex .navbar a {
     position: relative;
     margin-left: 2.5rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: var(--black);
 }
 
