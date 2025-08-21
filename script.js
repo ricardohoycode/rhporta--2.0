@@ -1,13 +1,13 @@
-let menu = document.querySelector('#menu-bar');
+let menu = document.querySelector('#menuBar');
 let navbar = document.querySelector('.navbar')
 
-menuBtn.onclick = () =>{
-   menuBtn.classList.toggle('fa-times');
+menuBar.onclick = () =>{
+   menuBar.classList.toggle('fa-times');
    navbar.classList.toggle('active');
 }
 
 window.onscroll = () =>{
-   menuBtn.classList.remove('fa-times');
+   menuBar.classList.remove('fa-times');
    navbar.classList.remove('active');
 }
 
@@ -31,3 +31,4 @@ var swiper = new Swiper(".teachers-slider", {
       },
    },
 });
+

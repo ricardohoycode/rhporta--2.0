@@ -99,7 +99,6 @@ section {
     box-shadow: var(--box-shadow);
     z-index: 1000;
 }
-
 .header .flex {
     display: flex;
     align-items: center;
@@ -107,13 +106,14 @@ section {
     position: relative;
     padding: .1rem 2rem;
 }
-
 .header .flex .logo img {
     animation: none;
     height: 12rem;
     margin: 0 .5rem;
 }
-
+.header .flex .navbar {
+   transition: all 0.3s ease;
+}
 .header .flex .navbar a::before,
 .header .flex .navbar a::after {
     content: '';
@@ -122,7 +122,6 @@ section {
     transition: 0.3s;
     opacity: 0;
 }
-
 .header .flex .navbar a::before {
     width: 90%;
     bottom: -2px;
@@ -134,27 +133,23 @@ section {
     bottom: -6px;
     left: 0;
 }
-
 .header .flex .navbar a {
     position: relative;
     margin-left: 2.5rem;
     font-size: 1.8rem;
     color: var(--black);
 }
-
 .header .flex .navbar a.activo::before,
 .header .flex .navbar a:hover::before {
     width: 70%;
     opacity: 1;
 }
-
 .header .flex .navbar a.activo::after,
 .header .flex .navbar a:hover::after {
     width: 40%;
     opacity: 1;
 }
-
-#menu-bar {
+#menuBar {
     display: none;
     border: .3rem solid var(--light-color);
     padding: .5rem 1.2rem;
@@ -162,6 +157,9 @@ section {
     font-size: 2.5rem;
     color: var(--black);
     cursor: pointer;
+}
+#menuBar.fa-times {
+  transform: rotate(90deg); /* Girar el icono de la hamburguesa cuando se activa */
 }
 
 .home-bg {
@@ -269,6 +267,9 @@ section {
     font-weight: 800;
     text-align: justify;
 }
+.about .content p span {
+       color: var(--main-color);
+    }
 .content .btn-download{
     top: 45%;
     left: 80%;
@@ -383,10 +384,9 @@ section {
 
 .menu .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 30rem);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1rem;
     align-items: flex-start;
-    justify-content: center;
 }
 
 .menu .box-container .box {
@@ -394,8 +394,8 @@ section {
 }
 
 .menu .box-container .box img {
-    width: 100%;
-    margin-bottom: 1rem;
+    height: 25rem;
+    margin-bottom: .5rem;
 }
 
 .menu .box-container .box h3 {
@@ -796,12 +796,12 @@ img {
 
 @media (max-width:768px) {
 
-    #menu-bar {
+    #menuBar {
         display: initial;
         transition: .1s linear;
     }
 
-    #menu-bar.fa-times {
+    #menuBar.fa-times {
         transform: rotate(180deg);
     }
 
